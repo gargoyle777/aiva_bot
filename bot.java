@@ -41,12 +41,12 @@ public class Bot {
 			driver.findElementByXPath("/html/body/div/div[2]/div/a/span[1]/span/span/span/span[1]/span/span[1]").click();
 		}
 		catch(Exception e) {
-			System.out.println("finestra di merda non presente, godo");
+			System.out.println("finestra dialogo non presente, proseguo");
 		}
 		driver.findElementByXPath("/html/body/app-root/div/div/app-mytracks/div/div/div[2]/div/tracks-list/div[1]/div[1]/div/div[6]").click();		//start going in the right directory
 		driver.findElementByXPath("/html/body/app-root/div/div/app-mytracks/div/div/div[2]/div/tracks-list/div[3]/div[1]").click();
 		driver.findElementByXPath("/html/body/app-root/div/div/app-mytracks/div/div/div[2]/div/tracks-list/div[1]/div["+Integer.toString(folderNumber)+"]/div/div[6]").click();
-		driver.findElementByXPath("/html/body/app-root/div/div/app-mytracks/div/div/div[2]/div/tracks-list/div[3]/div[1]").click();		//arrived nel regno
+		driver.findElementByXPath("/html/body/app-root/div/div/app-mytracks/div/div/div[2]/div/tracks-list/div[3]/div[1]").click();		//arrived 
 	}
 	
 	public void createTracks(int number, int macroGen, int keySign, int pacing, int instrumentation, int duration) {
